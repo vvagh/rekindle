@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Facebook Login JavaScript Example</title>
-    <meta charset="UTF-8">
-</head>
+    <title>Rekindle</title>
+  
+  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <link href="assets/please-wait/please-wait.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/main.css">
+
+</head>
+ 
 <body>
-    <!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
-    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true"></div>
-    <div id="status">
-    </div>
-    <div class="photo"></div>
+  <div id="urlContainer"></div>
+  <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Cover</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead" id="welcome">
+              Welcome Insert Name!
+            </p>
+            <p class="lead">
+              <div id="login-button" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true">asdasd</div><div id="status"></div>
+            </p>
+            <p class="lead" id ="go-button">
+              <a href="#" class="btn btn-lg btn-default">Go find a friend!</a>
+            </p>
+          </div>
+
+        </div>
+     </div>
+  </div>
+  <canvas id="canvas"></canvas>  
+
+  <!--Please Wait.js-->
+  <script src="assets/please-wait/please-wait.min.js"></script>
+  <!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="javascripts/game.js"></script>
+  <script type="text/javascript" src="javascripts/photo.js"></script>
+ 
+
 </body>
-<script src="main.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
 </html>

@@ -1,4 +1,5 @@
 'use strict';
+var photoURL;
 (function() {
 
   // This is called with the results from from FB.getLoginStatus().
@@ -117,7 +118,7 @@
     );
   }
 
-  var photos, photoNumber, photoURL;
+  var photos, photoNumber;
   function getPhoto(ID) {
     console.log('Grabbing random photo');
     FB.api(
@@ -128,7 +129,7 @@
           photoNumber = getRandomInt(0, photos.length);
           photoURL = photos[photoNumber].source;
           console.log(photoURL);
-          $('.photo').html('<img src=' + photoURL + '>')
+          init();
         }
       }
     );
