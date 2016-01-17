@@ -1,8 +1,7 @@
-
-
+@import "default.css";
 
               /*Hide the Second User Screen elements on page load*/
-#welcome, #go-button, #urlContainer{
+#go-button, #canvas{
 	display:none;
 }
               /*Loading Screen Styling*/

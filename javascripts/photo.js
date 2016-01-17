@@ -80,14 +80,14 @@ var photoURL;
   //   }
   // }
 
-  function startApp() {
+  $("#go-button").click(function startApp() {
     testAPI();
     var test = getAlbums(
       function(model) {
         console.log(model);
         getPhoto(model);
       });
-  };
+  });
 
 
   // Here we run a very simple test of the Graph API after login is
