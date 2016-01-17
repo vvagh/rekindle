@@ -1,10 +1,12 @@
                  
 
-// Move from login page to "go" page
+// Move from login page to "go" page if connection
 $('ifthingisconnected').click(function(){
 	$("#go-button").fadeIn('slow');
 	$("#logout-content").appendTo("#logout-space");
 });
+
+// Move from login page to "go" page after logging in
 
 //Move from "go" page to loading page    
 $("#go-button").click(function(){
@@ -17,8 +19,9 @@ $("#go-button").click(function(){
 
 	setTimeout(function(){
 		loading_screen.finish()
-	},5000); 
+	},4000); 
 
-	$("#welcome,#go-button").fadeOut();
+	$(".site-wrapper").fadeOut();
+	$("body").css("text-align", "initial");
 	$("#canvas").fadeIn();
 });

@@ -20,7 +20,6 @@ var _mouse;
 function init(){
 	_img = new Image();
 	_img.addEventListener('load',onImage,false);
-    console.log("hoophlahksd");
 	_img.src= photoURL;
 }
 
