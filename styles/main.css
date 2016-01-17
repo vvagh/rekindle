@@ -2,7 +2,7 @@
 
 
               /*Hide the Second User Screen elements on page load*/
-#welcome, #go-button, #urlContainer{
+#welcome, #go-button, .site-wrapper {
 	display:none;
 }
               /*Loading Screen Styling*/
@@ -55,3 +55,7 @@
     -webkit-transform: rotate(-360deg);
   }
 }
+
+/*canvas {
+  margin-left: 100px;
+}*/
