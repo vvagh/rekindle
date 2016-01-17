@@ -1,5 +1,5 @@
 
-const PUZZLE_DIFFICULTY = 4;
+const PUZZLE_DIFFICULTY = 3;
 const PUZZLE_HOVER_TINT = '#009900';
 //Change hover tint, border color, start triggers, and end game behaviour
 
@@ -46,20 +46,7 @@ function initPuzzle(){
     _currentPiece = null;
     _currentDropPiece = null;
     _stage.drawImage(_img, 0, 0, _puzzleWidth, _puzzleHeight, 0, 0, _puzzleWidth, _puzzleHeight);
-    createTitle("Click to Start Puzzle");
     buildPieces();
-}
-
-function createTitle(msg){
-    _stage.fillStyle = "#000000";
-    _stage.globalAlpha = .4;
-    _stage.fillRect(100,_puzzleHeight - 40,_puzzleWidth - 200,40);
-    _stage.fillStyle = "#FFFFFF";
-    _stage.globalAlpha = 1;
-    _stage.textAlign = "center";
-    _stage.textBaseline = "middle";
-    _stage.font = "20px Arial";
-    _stage.fillText(msg,_puzzleWidth / 2,_puzzleHeight - 20);
 }
 
 function buildPieces(){
@@ -78,7 +65,7 @@ function buildPieces(){
             yPos += _pieceHeight;
         }
     }
-    document.onmousedown = shufflePuzzle;
+    shufflePuzzle();
 }
 
 function shufflePuzzle(){
@@ -220,7 +207,7 @@ function gameOver(){
     document.onmousedown = null;
     document.onmousemove = null;
     document.onmouseup = null;
-    initPuzzle();
+    init();
 }
 
                  
