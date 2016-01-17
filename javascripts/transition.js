@@ -1,9 +1,8 @@
                  
 
 // Move from login page to "go" page
-$('#start').click(function(){
+$('ifthingisconnected').click(function(){
 	$("#go-button").fadeIn('slow');
-	$("#welcome").html("<h1 class='cover-heading'>Welcome (insert name)!</h1>");
 	$("#logout-content").appendTo("#logout-space");
 });
 
