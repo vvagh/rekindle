@@ -17,17 +17,6 @@ var _currentDropPiece;
 
 var _mouse;
 
-                        /*Loading Page*/
-window.loading_screen = window.pleaseWait({
-  logo: "img/rekindle.png",
-  backgroundColor: '#f46d3b',
-  loadingHtml: "<div class='spinner'><div class='cube1'></div><div class='cube2'></div></div>"
-});   
-
-$(document).ready(function(){
-    window.loading_screen.finish();
-});
-
 function init(){
 	_img = new Image();
 	_img.addEventListener('load',onImage,false);
@@ -235,10 +224,4 @@ function gameOver(){
     initPuzzle();
 }
 
-                        /*Transition to second page*/
-$('#login-button').click(function secondPage(){
-	$("#login-button").replaceWith($("#go-button"));
-	$("#go-button").fadeIn('slow');
-	$("#welcome").fadeIn('slow');
-});
-                     
+                 

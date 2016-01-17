@@ -12,8 +12,8 @@ var photoURL;
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       var accessToken = response.authResponse.accessToken;
+      testAPI();
       // Logged into your app and Facebook.
-      startApp();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -84,14 +84,13 @@ var photoURL;
   //   }
   // }
 
-  function startApp() {
-    testAPI();
+  $("#go-button").click(function() {
     var test = getAlbums(
       function(model) {
         console.log(model);
         getPhoto(model);
       });
-  };
+  });
 
 
   // Here we run a very simple test of the Graph API after login is
@@ -101,7 +100,7 @@ var photoURL;
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
+        'Welcome, ' + response.name + '!';
     });
   }
 

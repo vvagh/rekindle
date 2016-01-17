@@ -16,33 +16,33 @@
 </head>
  
 <body>
-  <div id="urlContainer"></div>
   <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand">Brand Name</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li id="logout-space"></li>
                 </ul>
               </nav>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead" id="welcome">
-              Welcome Insert Name!
-            </p>
-            <p class="lead">
-              <div id="login-button" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true" data-scope="user_photos, user_posts">Sign In</div><div id="status"></div>
-            </p>
+            <div id="welcome">
+              <h1 class="cover-heading">Cover your page.</h1>
+              <p  class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            </div>
+
+            <br>
+
+            <div id="logout-content">
+              <div class="fb-login-button" data-max-rows="1" data-size="medium" data-auto-logout-link="true"></div>
+              <div id="status"></div>
+            </div>
             <p class="lead" id ="go-button">
               <a href="#" class="btn btn-lg btn-default">Go find a friend!</a>
             </p>
@@ -51,8 +51,8 @@
         </div>
      </div>
   </div>
-  <canvas id="canvas"></canvas>  
-
+    
+<canvas id="canvas"></canvas>
   <!--Please Wait.js-->
   <script src="assets/please-wait/please-wait.min.js"></script>
   <!--Jquery-->
@@ -62,7 +62,7 @@
   
   <script type="text/javascript" src="javascripts/game.js"></script>
   <script type="text/javascript" src="javascripts/photo.js"></script>
- 
+  <script type="text/javascript" src="javascripts/transition.js"></script> 
 
 </body>
 
