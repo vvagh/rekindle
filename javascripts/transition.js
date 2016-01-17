@@ -1,6 +1,6 @@
                  
-
 // Move from login page to "go" page if connection
+
 $('ifthingisconnected').click(function(){
 	$("#go-button").fadeIn('slow');
 	$("#logout-content").appendTo("#logout-space");

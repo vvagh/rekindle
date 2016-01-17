@@ -1,7 +1,8 @@
 @import "default.css";
 
               /*Hide the Second User Screen elements on page load*/
- #canvas{
+
+#go-button, #canvas{
 	display:none;
 }
               /*Loading Screen Styling*/
@@ -54,3 +55,7 @@
     -webkit-transform: rotate(-360deg);
   }
 }
+
+/*canvas {
+  margin-left: 100px;
+}*/

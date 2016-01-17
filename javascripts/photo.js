@@ -38,7 +38,7 @@ var photoURL;
   window.fbAsyncInit = function() {
     FB.init({
       appId: '791190204336816',
-      cookie: true, // enable cookies to allow the server to access 
+      cookie: true, // enable cookies to allow the server to access
       // the session
       xfbml: true, // parse social plugins on this page
       version: 'v2.2' // use version 2.2
@@ -61,6 +61,10 @@ var photoURL;
     });
 
   };
+
+  $('.class').click(function(event) {
+    startApp();
+  });
 
   // Load the SDK asynchronously
   (function(d, s, id) {
@@ -101,6 +105,7 @@ var photoURL;
   }
 
   var albums, albumNumber, albumID;
+
   function getAlbums(callback) {
     console.log('Getting album id');
     FB.api(
@@ -118,6 +123,7 @@ var photoURL;
   }
 
   var photos, photoNumber;
+
   function getPhoto(ID) {
     console.log('Grabbing random photo');
     FB.api(
